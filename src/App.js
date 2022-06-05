@@ -16,7 +16,7 @@ function App() {
     // 3. TODO - Load network 
     // e.g. const net = await cocossd.load();
     //https://storage.googleapis.com/tensorflowjsbisindo/model.json
-    const net = await tf.loadGraphModel('https://storage.googleapis.com/tensorflowjsbisindo/model.json')
+    const net = await tf.loadGraphModel(process.env.REACT_APP_MODEL_URL)
 
     //  Loop and detect hands
     setInterval(() => {
