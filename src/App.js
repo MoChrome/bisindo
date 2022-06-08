@@ -21,7 +21,7 @@ function App() {
     //  Loop and detect hands
     setInterval(() => {
       detect(net);
-    }, 1);
+    }, 16.7);
   };
 
   const detect = async (net) => {
